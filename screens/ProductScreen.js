@@ -58,31 +58,31 @@ export default function FavouriteScreen(props) {
             
         </View>
         <View className="px-4 space-y-2">
-          <Text style={{color: themeColors.text}} className="text-lg font-bold">Coffee size</Text>
+          <Text style={{color: themeColors.text}} className="text-lg font-bold">Coffe</Text>
           <View className="flex-row justify-between">
             <TouchableOpacity 
              onPress={()=> setSize('small')}
              style={{backgroundColor: size=='small'? themeColors.bgLight: 'rgba(0,0,0,0.07)'}} 
              className="p-3 px-8 rounded-full">
-              <Text className={size=='small'? "text-white": "text-gray-700"}>Small</Text>
+              <Text className={size=='small'? "text-white": "text-gray-700"}>Grande</Text>
             </TouchableOpacity>
             <TouchableOpacity 
              onPress={()=> setSize('medium')}
              style={{backgroundColor: size=='medium'? themeColors.bgLight: 'rgba(0,0,0,0.07)'}}
               className="p-3 px-8 rounded-full">
-              <Text className={size=='medium'? "text-white": "text-gray-700"}>Medium</Text>
+              <Text className={size=='medium'? "text-white": "text-gray-700"}>Medio</Text>
             </TouchableOpacity>
             <TouchableOpacity 
              onPress={()=> setSize('large')}
              style={{backgroundColor: size=='large'? themeColors.bgLight: 'rgba(0,0,0,0.07)'}} 
              className="p-3 px-8 rounded-full">
-              <Text className={size=='large'? "text-white": "text-gray-700"}>Large</Text>
+              <Text className={size=='large'? "text-white": "text-gray-700"}>Largura</Text>
             </TouchableOpacity>
           </View>
         </View>
 
         <View className="px-4 space-y-2">
-          <Text style={{color: themeColors.text}} className="text-lg font-bold">About</Text>
+          <Text style={{color: themeColors.text}} className="text-lg font-bold">Mais</Text>
           <Text className="text-gray-600">
             {item.desc}
           </Text>
@@ -119,7 +119,7 @@ export default function FavouriteScreen(props) {
             <TouchableOpacity 
               style={{backgroundColor: themeColors.bgLight}} 
               className="p-4 rounded-full flex-1 ml-4">
-              <Text className="text-center text-white text-base font-semibold">Buy now</Text>
+              <Text className="text-center text-white text-base font-semibold">Agora</Text>
             </TouchableOpacity>
           </View>
         </View>

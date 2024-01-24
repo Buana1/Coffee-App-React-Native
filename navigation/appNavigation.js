@@ -5,6 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 import { Dimensions, LogBox, Platform, Text, View } from 'react-native';
 import ProductScreen from '../screens/ProductScreen';
 import { themeColors } from '../theme';
+import { LogIn } from 'react-native-feather';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {HomeIcon as HomeOutline, HeartIcon as HeartOutline, ShoppingBagIcon as BagOutline } from 'react-native-heroicons/outline';
@@ -25,7 +26,7 @@ export default function AppNavigation() {
         contentStyle: {backgroundColor: 'white'}
       }}>
         <Stack.Screen name="Home" options={{headerShown: false}} component={HomeTabs} />
-        <Stack.Screen name="Product" options={{headerShown: false}} component={ProductScreen} />
+        <Stack.S3creen name="Product" options={{headerShown: false}} component={ProductScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )
